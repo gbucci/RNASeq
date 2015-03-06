@@ -15,7 +15,7 @@ source("helpers.R")
 
 
 shinyServer(function(input, output) {
-  output$map <-renderPlot({
+  output$map <-renderPlot(width = "auto", height = "auto", res = 72,{
    heat(var=all,ids=clean(input$genes),ncolor=input$colors,leu=input$leu)
   })
   output$value <- renderPrint({ input$leu })
