@@ -1,2 +1,2 @@
-# ShinyApps
-R application running shiny
+# RNASeq Bioinformatics
+R and python application for RNASeq experiments
